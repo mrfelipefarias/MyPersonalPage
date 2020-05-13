@@ -76,6 +76,8 @@ a:hover{
     text-decoration: underline;
     
 }
+
+
 .site-title
 ,.site-subtitle{
     color: antiquewhite;
@@ -85,9 +87,60 @@ a:hover{
 
 .site-title{
     font-size: 4em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.site-subtitle{
+    font-family: 'Merienda', cursive;
+    line-height: 2.2em;
+}
+
+.portfolio{
+    padding: 2em; 
+    height: 100vh;
+}
+
+.portfolio h2{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+.portfolio .grid{
+    display:grid;
+    gap: 2em;
+    
+}
+
+@media(min-width: 560px){
+    .portfolio .grid{
+        grid-template-columns: 240px 240px ;
+    }
+}
+
+@media(min-width: 880px){
+    .portfolio .grid{
+        grid-template-columns: repeat(3, 240);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+.portfolio figure{
+    text-align: center;
 }
 
 .img-portfolio{
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+@media(min-width: 1200px){
+    .img-portfolio{
+        height: auto;
+        width: 100%;
+    }
 }
