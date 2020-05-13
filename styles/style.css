@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/background.jpg');
     font-family: Arial, Helvetica, sans-serif;
     background-size: auto 100vh;
     height: 100vh;
@@ -42,6 +42,7 @@ header{
 .menu{
     background-color: aliceblue;
     position: fixed;
+    
     width: 100vw;
     top: 0;
 }
@@ -138,9 +139,22 @@ a:hover{
     object-position: left bottom;
 }
 
+.img-perfil{
+    height: 180px;
+    width: 240px;
+    border-radius: 50px;   
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    object-position: left ;
+}
+
 @media(min-width: 1200px){
     .img-portfolio{
         height: auto;
         width: 100%;
     }
 }
+
+
